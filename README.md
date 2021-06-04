@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+## 🔗 Projeto 
+- api-giphy-challenge é um projeto desenvolvido para cumprir os requisitos do desafio em desenvolvimento Front-End.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🏁 Desafios
 
-## Available Scripts
+- Listar gifs através de uma busca;
+- Visualizar os detalhes de um gif;
+- Scroll infinito de gifs.
+- Salvar os gifs;
+- Editar os dados de um gif salvo;
+- Deletar um gif.
 
-In the project directory, you can run:
+## 🚀 Tecnologias
 
-### `yarn start`
+- [ReactJS](https://reactjs.org/)
+- [React Router Dom](https://reactrouter.com/web/guides/quick-start)
+- [Typescript](https://www.typescriptlang.org/)
+- [Ant Design](https://ant.design/)
+- [axios](https://github.com/axios/axios)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Iniciando
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Requisitos
 
-### `yarn test`
+- Você precisa instalar ambos [Node.js](https://nodejs.org/en/download/) e [Yarn](https://yarnpkg.com/) para executar este projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Clone o projeto e acesse a pasta**
 
-### `yarn build`
+```bash
+$ git clone https://github.com/mauricio-msp/api-giphy-challenge.git && cd api-giphy-challenge
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Siga os passos abaixo**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Instale as dependências
+$ yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Execute o servidor web
+$ yarn start
+```
 
-### `yarn eject`
+O aplicativo estará disponível para acesso em seu navegador em `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito por Maurício Porfírio 👋 [Confira meu LinkedIn](https://www.linkedin.com/in/mauricio-porfirio-673857105/)

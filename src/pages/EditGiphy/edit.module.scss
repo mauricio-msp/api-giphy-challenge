@@ -1,0 +1,23 @@
+.editContainer {
+  width: 100%;
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .inputContainer {
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      margin-right: 20px;
+    }
+  }
+}

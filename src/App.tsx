@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import { Home } from './pages/Home';
+import { DetailGiphy } from './pages/DetailGiphy';
+import { SavedGiphys } from './pages/SaveGiphy';
+import { EditGiphy } from './pages/EditGiphy';
+
+import 'antd/dist/antd.css';
+import './styles/global.scss';
 
 function App() {
+  useEffect(() => {
+    const isExisted = localStorage.getItem('savedGiphys');
+
+    if (!isExisted) {
+      localStorage.setItem('savedGiphys', JSON.stringify([]));
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/gif/:id" component={DetailGiphy} />
+        <Route path="/gifs/saved" component={SavedGiphys} />
+        <Route path="/gifs/edit/:id" component={EditGiphy} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
