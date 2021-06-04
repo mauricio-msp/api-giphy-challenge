@@ -1,7 +1,7 @@
 import { Empty } from 'antd';
 
 type EmptyGiphyProps = {
-  listIsEmpty: [];
+  listIsEmpty: any;
   positionTop: number;
   message: string;
   color: string;

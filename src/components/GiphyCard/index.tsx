@@ -7,7 +7,7 @@ type GiphyCardProps = {
   marginCard?: number;
   imgCardWidth: number | string;
   imgCardHeight: number;
-  actionsCard: ReactNode[];
+  actionsCard?: ReactNode[];
 }
 
 function GiphyCard({ 
